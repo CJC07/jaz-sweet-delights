@@ -4,12 +4,18 @@
   box-sizing: border-box;
 }
 
+/* Font styles for the whole website */
+:root {
+  --main-font: 'Kristen ITC', 'Comic Sans MS', cursive, sans-serif;
+}
+
 body {
-  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-family: var(--main-font);
   background-color: #d86c9b;
   color: #fff;
   line-height: 1.6;
   padding: 20px;
+  font-size: 16px; /* Base font size */
 }
 
 header {
@@ -18,18 +24,20 @@ header {
 }
 
 header h1 {
-  font-size: 3rem;
+  font-size: 2.75rem; /* Slightly smaller for better readability */
   color: #fff;
   background-color: #a94c7a;
   padding: 10px 20px;
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  letter-spacing: 1px; /* Adds some spacing between letters */
 }
 
 section h2 {
-  font-size: 2rem;
-  margin-bottom: 10px;
+  font-size: 1.8rem; /* Adjusted for better hierarchy */
+  margin-bottom: 15px;
   color: #ffe6f0;
+  letter-spacing: 0.5px;
 }
 
 #about, #contact {
@@ -81,14 +89,22 @@ section h2 {
 }
 
 .product-card p {
-  font-size: 1.1rem;
+  font-size: 1.2rem; /* Slightly larger for better readability */
   color: #fff;
   margin-top: 10px;
+  letter-spacing: 0.3px;
+}
+
+p {
+  font-size: 1.1rem; /* Standard paragraph size */
+  margin-bottom: 1rem;
+  letter-spacing: 0.2px;
 }
 
 footer {
   text-align: center;
   margin-top: 40px;
-  font-size: 0.9rem;
+  font-size: 1rem; /* Slightly larger footer text */
   color: #ffe6f0;
+  letter-spacing: 0.2px;
 }
