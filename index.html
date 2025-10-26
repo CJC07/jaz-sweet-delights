@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Jaz' Sweet Delights</title>
   <link rel="stylesheet" href="style.css" />
+  <script src="script.js"></script>
 </head>
 <body>
   <header>
@@ -27,11 +28,45 @@
       <img src="https://raw.githubusercontent.com/CJC07/jaz-sweet-delights/main/kwek-dog.png" alt="Kwek-dog" />
       <p>Kwek-dog</p>
     </div>
+    <div class="product-card" onclick="openCoffeeModal()">
+      <img src="https://raw.githubusercontent.com/CJC07/jaz-sweet-delights/main/coffee.jelly.png" alt="Coffee Jelly" />
+      <p>Coffee Jelly</p>
+    </div>
     <!-- Add more cards for each product -->
   </div>
 </section>
 
-  <section id="contact">
+<!-- Coffee Jelly Modal -->
+<div id="coffeeModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeCoffeeModal()">&times;</span>
+    <h2>Coffee Jelly Variants</h2>
+    <div class="variant-grid">
+      <!-- TODO: Add your coffee jelly variant 1 -->
+      <div class="variant-card">
+        <img src="PATH_TO_REGULAR_COFFEE_JELLY_IMAGE" alt="Regular Coffee Jelly" />
+        <h3>Regular Coffee Jelly</h3>
+        <p class="price">₱XX.XX</p>
+      </div>
+
+      <!-- TODO: Add your coffee jelly variant 2 -->
+      <div class="variant-card">
+        <img src="PATH_TO_SPECIAL_COFFEE_JELLY_IMAGE" alt="Special Coffee Jelly" />
+        <h3>Special Coffee Jelly</h3>
+        <p class="price">₱XX.XX</p>
+      </div>
+
+      <!-- TODO: Add your coffee jelly variant 3 -->
+      <div class="variant-card">
+        <img src="PATH_TO_PREMIUM_COFFEE_JELLY_IMAGE" alt="Premium Coffee Jelly" />
+        <h3>Premium Coffee Jelly</h3>
+        <p class="price">₱XX.XX</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section id="contact">
     <h2>Order Now</h2>
     <p>Message us on Facebook or Instagram to place your order!</p>
   </section>
