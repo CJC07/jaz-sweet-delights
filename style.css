@@ -71,9 +71,11 @@ section h2 {
 }
 
 .product-card img {
-  width: 200px;  /* Fixed width */
-  height: 200px; /* Fixed height */
-  object-fit: cover; /* This will maintain aspect ratio */
+  max-width: 200px;  /* Maximum width */
+  max-height: 200px; /* Maximum height */
+  width: auto;      /* Allow natural width */
+  height: auto;     /* Allow natural height */
+  object-fit: contain; /* Show entire image without cropping */
   border-radius: 8px;
   margin-bottom: 10px;
 }
